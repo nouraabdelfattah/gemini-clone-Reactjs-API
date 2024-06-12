@@ -1,0 +1,276 @@
+
+/* ////////// Header /////////////////// */
+.Header{
+    display: flex;
+   
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   margin-top: -3px;
+   
+  
+
+}
+
+.nav-gemini{
+    background:-webkit-linear-gradient(rgb(40, 31, 160)5%,rgb(103, 185, 247));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Logo{
+    width: 50px ;
+    height: 50px;
+  border-radius: 100%;
+    margin-right: 20px;
+}
+/* //////////// main-section ////////////////////// */
+
+.greet{
+   
+    font-size: 30px;
+    color: white; 
+  
+  
+}
+
+.greete-header{
+    position: relative;
+    
+   color: rgb(5, 56, 241);
+   
+    margin: auto;
+}
+.greet-p-head{
+    background: -webkit-linear-gradient(#2700c3, #00a0ae);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.main-section{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+.greate-body{
+    
+    font-size: 24px;
+    margin-top: 10px;
+}
+.main-photo{
+    width: 20%;
+    height: 20%;
+    margin: auto;
+    text-align: center;
+}
+
+@media  (max-width:992px) {
+ .greet{
+    
+    margin-bottom: 10px;
+ }
+  
+    .greete-header{
+        font-size: 23px;
+    }
+    .greet-p-head{
+            font-size: 1.5rem;
+    }
+    
+    .greate-body{
+        
+font-size: 16px;
+
+    }
+   .search{
+  margin-top: 50px;
+
+   
+   }
+    .search input{
+        font-size: 14px;
+        
+    }
+    .main-photo{
+        width: 30%;
+        height: 30%;
+    }
+    
+}
+   
+
+@media  (max-width:767px) {
+    .main-photo{
+        width: 50%;
+        height: 50%;
+    }
+   
+}
+@media  (max-width:567px) {
+    .main-photo{
+        width: 40%;
+        height: 40%;
+    }
+   .search-box{
+    font-size: 13px;
+   }
+    
+}
+/* ////////////// search section ////////////// */
+
+.search{
+    
+   width: 100%;
+   max-width: 900px;
+   
+    padding: 0 17px;
+margin: auto;
+
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: white;
+    padding: 10px 5px ;
+    border-radius: 50px;
+    margin: auto;
+    text-align: center;
+}
+.search-input{
+    flex: 1;
+   border: 0;
+   outline: 0;
+   outline-offset: 0;
+ font-size: 16px;
+}
+
+.search-iqon{
+    
+    color:rgb(126, 125, 125);
+    font-size: 18px;
+     cursor: pointer;  
+    display: flex;
+    align-items: end;
+    gap: 13px;
+   justify-content: end;
+    
+}
+.photo-iqon{
+    margin-right: 2px;
+}
+/* ////////// suggestions  /////////////*/
+
+.cards{
+    grid-column-gap: 10px;
+ justify-content: center; 
+ grid-row-gap: 15px;
+margin: auto;
+margin-top: 20px;
+    font-size: 17px;
+}
+.card{
+    cursor: pointer;
+    background:-webkit-linear-gradient(rgb(25, 17, 114)5%,rgb(67, 129, 173));
+    color: white;
+    border-radius: 20px;
+}
+.card:hover{
+    background-color: rgba(85, 84, 100, 0.59);
+    transform: scale(1.02,1.02);
+}
+.cardBody{
+    height: 170px;
+    position: relative;
+    margin-top: 10px;
+    
+}
+.cardBody-Iqon{
+    position: absolute;
+    right: 0;
+bottom: 5px;
+width: 30px;
+height: 30px;
+text-align: center;
+display: block;
+padding-top: 2px;
+background-color:rgb(9, 9, 113);
+border-radius: 50%;
+cursor: pointer;
+}
+.result{
+    padding: 0 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+    color: rgb(245, 245, 245);
+}
+.result::-webkit-scrollbar{
+    display: none;
+}
+.result-title{
+    margin: 40px 0;
+    display: flex ;
+    align-items: center;
+    gap: 20px;
+}
+.star-iqon{
+    font-size: 30px;
+    display: block;
+   color: rgb(2, 198, 202);
+}
+.result-data{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.loading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.loading hr{
+    border-radius: 4px;
+    border: none;
+    background-color: #ffffff;
+    background:linear-gradient(to right,#8694ef,#ffffff ,rgb(71, 95, 216));
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loading 3s infinite linear;
+}
+@keyframes loading {
+    0%{
+        background-position: -800px 0px;
+
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+    
+}
+.result p{
+    font-size: 17px;
+    font-weight: 300px;
+    line-height: 1.8;
+}
+.result-search{
+    position: absolute;
+    bottom: 0;
+}
+.bottom-p{
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+.search-bottom{
+position: fixed;
+bottom: 0;
+left: 50%;
+transform: translate(-50%,-50%);
+
+
+}
